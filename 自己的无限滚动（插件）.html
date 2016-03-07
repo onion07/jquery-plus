@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <title>无限滚动(插件)</title>
+    <style type="text/css">
+          *{
+            margin:0;
+            padding: 0;
+          }
+          #textscroll{    
+            position: relative;
+            height: 35px;
+            overflow: hidden;
+            margin: 0 15px;
+            border-top: #e6e6e6 solid 1px;
+          }
+          h1{
+            text-align: center;
+            font-size: 22px;
+            color: #666;
+          }
+          #textscroll ul{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            margin:0;
+            width: 100%;
+          }
+         #textscroll li{ 
+            overflow:hidden;
+            height:35px; 
+            width:100%;
+            line-height:35px; 
+            color: #666;
+        }
+        #textscroll li span{ 
+            white-space: nowrap;
+        }
+
+    </style>
+    <script src="../jquery-1.8.3.min.js"></script>
+    <script src="rool.js"></script>
+</head>
+
+<body>
+    <h1>无限滚动</h1>
+    <div id="textscroll">
+           <ul>
+              <li><span>1-时代发生的发生的发生的有撒的发生地方vkjszndgvszn</span></li> 
+              <li><span>2-请问热辐射大法师打发请问企鹅度萨芬</span></li>
+              <li><span>3-的说法呃呃肥肉vs啊地方</span></li>
+           </ul>
+    </div>
+
+<script>
+
+  //入口
+  $(function () {
+
+      $('#textscroll').rooling(2600);
+
+  });
+</script>
+</body>
+</html>
